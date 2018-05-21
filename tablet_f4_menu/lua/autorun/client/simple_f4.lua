@@ -21,6 +21,17 @@ end
 ------------------------------------------*/
 
 local font = 1
+local icon11 = Material("tabletf4/tablet4.png")
+local icon8 = Material("tabletf4/tablet2.png")
+local icon9 = Material("tabletf4/tablet3.png")
+local icon10 = Material("tabletf4/info.png")
+local icon1 = Material("tabletf4/pole_emploi.png")
+local icon2 = Material("tabletf4/caddie.png")
+local icon3 = Material("tabletf4/gun_store.png")
+local icon4 = Material("tabletf4/web.png")
+local icon5 = Material("tabletf4/commands.png")
+local icon6 = Material("tabletf4/discord.png")
+local icon7 = Material("tabletf4/reglage.png")
 
 net.Receive("f4menu", function()
 
@@ -36,18 +47,7 @@ net.Receive("f4menu", function()
      icon = Material("tabletf4/tablet4.png")
     end
 
-	local ply = LocalPlayer()
-    local icon11 = Material("tabletf4/tablet4.png")
-    local icon8 = Material("tabletf4/tablet2.png")
-    local icon9 = Material("tabletf4/tablet3.png")
-    local icon10 = Material("tabletf4/info.png")
-    local icon1 = Material("tabletf4/pole_emploi.png")
-    local icon2 = Material("tabletf4/caddie.png")
-    local icon3 = Material("tabletf4/gun_store.png")
-    local icon4 = Material("tabletf4/web.png")
-    local icon5 = Material("tabletf4/commands.png")
-    local icon6 = Material("tabletf4/discord.png")
-    local icon7 = Material("tabletf4/reglage.png")
+local ply = LocalPlayer()
     local TimeString = os.date( "%H:%M:%S - %d/%m/%Y" , Timestamp )
 	local TabletF4_Frame = vgui.Create("DFrame")
 
@@ -68,7 +68,7 @@ net.Receive("f4menu", function()
 		draw.DrawText(Tablet_Menu.NameCommand, "Trebuchet24", ScrW() * 0.0870, ScrH() * 0.420, Color(255, 255, 255, 255))
 		draw.DrawText(Tablet_Menu.NameReglage, "Trebuchet24", ScrW() * 0.2025, ScrH() * 0.420, Color(255, 255, 255, 255))
 		draw.DrawText(Tablet_Menu.NameInfo, "Trebuchet24", ScrW() * 0.3090, ScrH() * 0.420, Color(255, 255, 255, 255))
-		if Tablet_Menu.ShowDiscord == true then
+		if Tablet_Menu.ShowDiscord then
 		draw.DrawText(Tablet_Menu.NameDiscord, "Trebuchet24", ScrW() * 0.4250, ScrH() * 0.420, Color(255, 255, 255, 255))
 	    end
 		draw.DrawText(TimeString, "Trebuchet18", ScrW() * 0.460, ScrH() * 0.105, Color(255, 255, 255, 255))
@@ -598,7 +598,7 @@ net.Receive("f4menu", function()
     	gui.OpenURL( Tablet_Menu.LinkWebsite )
     end
 
-if Tablet_Menu.ShowDiscord == true then
+if Tablet_Menu.ShowDiscord then
     local TabletF4_Discord = vgui.Create( "DButton", TabletF4_Frame )
     TabletF4_Discord:SetText( "" )
     TabletF4_Discord:SetPos( ScrW() * 0.4100, ScrH() * 0.300 )
