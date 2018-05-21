@@ -677,7 +677,7 @@ end
         end
 
 		local Dropmoney = vgui.Create( "DButton", TabletF4_CmdArea )
-        Dropmoney:SetText( "Drop Money" )
+        Dropmoney:SetText( "Tablet_Menu.ButtonDrop" )
         Dropmoney:SetPos( ScrW()*.0200, ScrH()*.150 )
         Dropmoney:SetSize( 250, 30 )
         Dropmoney:SetFont("Trebuchet24")
@@ -693,7 +693,7 @@ end
         end
 
         local Givemoney = vgui.Create( "DButton", TabletF4_CmdArea )
-        Givemoney:SetText( "Give Money" )
+        Givemoney:SetText( "Tablet_Menu.ButtonGive" )
         Givemoney:SetPos( ScrW()*.0200, ScrH()*.195 )
         Givemoney:SetSize( 250, 30 )
         Givemoney:SetFont("Trebuchet24")
@@ -709,7 +709,7 @@ end
         end
 
         local Sleep = vgui.Create( "DButton", TabletF4_CmdArea )
-        Sleep:SetText( "Sleep" )
+        Sleep:SetText( Tablet_Menu.ButtonSleep )
         Sleep:SetPos( ScrW()*.0200, ScrH()*.240 )
         Sleep:SetSize( 250, 30 )
         Sleep:SetFont("Trebuchet24")
@@ -725,7 +725,7 @@ end
         end
 
         local Dropweapon = vgui.Create( "DButton", TabletF4_CmdArea )
-        Dropweapon:SetText( "Drop Weapon" )
+        Dropweapon:SetText( Tablet_Menu.ButtonWp )
         Dropweapon:SetPos( ScrW()*.0200, ScrH()*.285 )
         Dropweapon:SetSize( 250, 30 )
         Dropweapon:SetFont("Trebuchet24")
