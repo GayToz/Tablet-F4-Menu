@@ -153,8 +153,6 @@ local ply = LocalPlayer()
 	        surface.SetMaterial( icon )
 		    surface.DrawTexturedRect( 0, 0, w, h )
 	    end
-        LockIcon1.DoClick = function()
-        end
         if font == 1 or 3 or 4 then
         local LockIcon2 = vgui.Create( "DButton", TabletF4_FrameReglage )
         LockIcon2:SetText( "" )
