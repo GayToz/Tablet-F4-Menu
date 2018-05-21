@@ -391,7 +391,7 @@ local ply = LocalPlayer()
 		end
 
 		for k, v in pairs(DarkRPEntities) do
-
+if(table.HasValue(v.allowed, ply:Team())) then
 	    local TabletF4_EntBack2 = vgui.Create("DPanel", TabletF4_EntArea)
         TabletF4_EntBack2:Dock(TOP)
         TabletF4_EntBack2:SetSize(0,150)
@@ -445,7 +445,7 @@ local ply = LocalPlayer()
 
 
 		end
-
+                end
         local TabletF4_Close2 = vgui.Create( "DButton", TabletF4_Entities )
         TabletF4_Close2:SetText( "" )
         TabletF4_Close2:SetPos( ScrW() * 0.016, ScrH() * 0.335 )
