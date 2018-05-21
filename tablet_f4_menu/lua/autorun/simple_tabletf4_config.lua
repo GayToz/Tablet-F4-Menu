@@ -24,6 +24,11 @@ Tablet_Menu.CitizenCmd       = "Citizen Commands :"
 Tablet_Menu.PoliceCmd        = "Police Commands :"
 Tablet_Menu.MayorCmd         = "Mayor Commands :"
 
+Tablet_Menu.ButtonDrop       = "Drop Money"
+Tablet_Menu.ButtonGive       = "Give Money"
+Tablet_Menu.ButtonSleep      = "Sleep"
+Tablet_Menu.ButtonWp         = "Drop Weapon"
+
 Tablet_Menu.TextMoney        = "Enter Your Money"
 Tablet_Menu.TextPlayer       = "Player Name (name) (raison)"
 Tablet_Menu.TextLaw          = "The Name Of Your Law"
